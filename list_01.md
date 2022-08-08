@@ -9,37 +9,41 @@
 ### ex1
 
 ```java
-public int[] solution(int[] arr) {
-    int max = 0; // 최대값 저장
-    for (int a : arr) {
-        if (a > max) {
-            max = a;
-        }
-    }
+class solution {
 
-    int count = 0; // 최대값 개수 확인
-      for (int a : arr) {
-          if (a == max) {
-              count++;
-          }
-      }
+	public int[] solution(int[] arr) {
+	    int max = 0; // 최대값 저장
+	    for (int a : arr) {
+		if (a > max) {
+		    max = a;
+		}
+	    }
 
-    int[] answer = new int[count]; // 배열 생성
-    int index = 0;
+	    int count = 0; // 최대값 개수 확인
+	      for (int a : arr) {
+		  if (a == max) {
+		      count++;
+		  }
+	      }
 
-    for (int i = 0; i < arr.length; i++) { // 배열 인덱스로 채우기
-        if (arr[i] == max) {
-            answer[index++] = i;
-        }
-    }
-    return answer;
-}
+	    int[] answer = new int[count]; // 배열 생성
+	    int index = 0;
+
+	    for (int i = 0; i < arr.length; i++) { // 배열 인덱스로 채우기
+		if (arr[i] == max) {
+		    answer[index++] = i;
+		}
+	    }
+	    return answer;
+	}
+	
+}	
 ```
 
 ```java
 class Solution {
 	
-    public static int[] solution(int[] arr) {
+	public static int[] solution(int[] arr) {
 		// 최대값 저장할 변수
                 int max = 0;
 		for(int a : arr) if(a > max) max = a;
