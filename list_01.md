@@ -80,8 +80,8 @@ class Solution {
 }
 
 ```
-
-```java stream() 사용
+### ex3 stream() 사용
+```java 
 import java.util.stream.*;
 
 class Solution {
