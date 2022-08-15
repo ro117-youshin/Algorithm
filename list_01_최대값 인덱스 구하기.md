@@ -6,11 +6,10 @@
 * input : [1, 3, 7, 4, 7, 2, 1]
 * output : [2, 4]
 
-### ex1 Array
+### ex1 Array사용
 
 ```java
-class solution {
-
+class Solution {
 	public int[] solution(int[] arr) {
 	    int max = 0; // 최대값 저장
 	    for (int a : arr) {
@@ -18,17 +17,14 @@ class solution {
 		    max = a;
 		}
 	    }
-
 	    int count = 0; // 최대값 개수 확인
 	      for (int a : arr) {
 		  if (a == max) {
 		      count++;
 		  }
 	      }
-
 	    int[] answer = new int[count]; // 배열 생성
 	    int index = 0;
-
 	    for (int i = 0; i < arr.length; i++) { // 배열 인덱스로 채우기
 		if (arr[i] == max) {
 		    answer[index++] = i;
@@ -36,13 +32,12 @@ class solution {
 	    } 
 	    return answer;
 	}
-	
 }	
 ```
 
 ```java
 class Solution {
-	public static int[] solution(int[] arr) {
+	public int[] solution(int[] arr) {
                 int max = 0; // 최대값 저장할 변수
 		for(int a : arr) if(a > max) max = a;
 		int count = 0; // 최대값 개수 확인을 위한 변수
@@ -74,7 +69,6 @@ class Solution {
 		for(int i = 0; i < list.size(); i++) {
 			answer[i] = list.get(i);
 		}
-		
 		return answer;
 	}
 }
