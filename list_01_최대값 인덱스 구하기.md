@@ -60,7 +60,7 @@ import java.util.*;
 class Solution {
 	public int[] solution(int[] arr) {
 		int max = 0; // 최대값 구하기
-		for(int a : arr) if (a > max) = a;
+		for(int a : arr) if (a > max) max = a;
 		List<Integer> list = new LinkedList<>(); // 리스트 만들기
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] == max) list.add(i);
