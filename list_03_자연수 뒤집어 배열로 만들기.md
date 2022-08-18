@@ -15,6 +15,22 @@
 
 ### 코드
 
+#### ex1
+```java
+import java.util.*;
+class Solution {
+    public int[] solution(long n) {
+        String[] strArr = String.valueOf(n).split("");
+        int[] answer = new int[strArr.length];
+        int index = 0;
+        for(int i = strArr.length - 1; i >= 0; i--) {
+            answer[index++] = Integer.parseInt(strArr[i]);
+        }     
+        return answer;
+    }
+}
+```
+
 #### Reference
 ```java
 public int[] solution(long n) {
