@@ -1,4 +1,4 @@
-> 프로그래머스 - [Java]어서와! 자료구조 알고리즘은 처음이지? [[링크](https://school.programmers.co.kr/learn/courses/13577)]  
+> 프로그래머스 - 폰켓몬 [[링크](https://school.programmers.co.kr/learn/courses/30/lessons/1845)]  
 # Map 01.
 ## 폰켓몬
 
