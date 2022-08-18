@@ -1,4 +1,4 @@
-> 프로그래머스 - [Java]어서와! 자료구조 알고리즘은 처음이지? [[링크](https://school.programmers.co.kr/learn/courses/13577)]  
+> 프로그래머스 - 자연수 뒤집어 배열로 만들기 [[링크](https://school.programmers.co.kr/learn/courses/30/lessons/12932)]  
 # List 03.
 ## 자연수 뒤집어 배열 만들기
 
