@@ -8,7 +8,7 @@
 <img src="https://user-images.githubusercontent.com/86038910/186175969-e13cd3f5-9531-4c5d-ad8a-5fd85ff70a2d.png">
 </details>
 
-### Query
+### QUERY
 ```mysql
 SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE 
 FROM ANIMAL_INS 
