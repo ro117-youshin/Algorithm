@@ -8,10 +8,22 @@
 </details>
 
 ### QUERY
+#### ex
 ```mysql
 SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) AS count 
 FROM ANIMAL_INS 
 WHERE ANIMAL_TYPE = "Cat" OR ANIMAL_TYPE = "Dog" 
 GROUP BY ANIMAL_TYPE 
 ORDER BY ANIMAL_TYPE;
+```
+
+#### reference
+- 기존 풀이에서 WHERE절을 넣을 필요 X. (TYPE 자체가 Cat과 Dog만 있기 때문)
+- ANIMAL_TYPE 컬럼의 유형별 개수를 알고 싶기 때문에 GROUP BY로 그룹화 필요.
+- 고양이를 개보다 먼저 조회하라는 조건이 있기 때문에 ORDER BY로 정렬 필요.
+```MYSQL
+SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) AS count 
+FROM ANIMAL_INS
+GROUP BY ANIMAL_TYPE
+ORDER BY ANIMAL_TYPE
 ```
