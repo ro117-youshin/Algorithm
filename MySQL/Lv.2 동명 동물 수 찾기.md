@@ -16,3 +16,6 @@ GROUP BY NAME
 HAVING COUNT(NAME) > 1
 ORDER BY NAME;
 ```
+
+#### study
+- [GROUP BY 그룹화하여 데이터 조회 정리](https://livebyfaith117.tistory.com/147)
