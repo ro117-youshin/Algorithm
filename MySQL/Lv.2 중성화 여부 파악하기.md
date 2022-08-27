@@ -12,11 +12,33 @@
 #### ex1 CASE 사용 
 ```MYSQL
 SELECT ANIMAL_ID, NAME, 
-CASE WHEN SEX_UPON_INTAKE LIKE "NE%" OR SEX_UPON_INTAKE LIKE "SP%" THEN 'O' ELSE 'X' END AS "중성화" 
+CASE 
+    WHEN SEX_UPON_INTAKE LIKE "NE%" OR SEX_UPON_INTAKE LIKE "SP%" THEN 'O' 
+    ELSE 'X' 
+END AS 중성화
 FROM ANIMAL_INS;
 ```
 #### ex2 IF 사용
 ```MYSQL
-SELECT ANIMAL_ID, NAME, IF(SEX_UPON_INTAKE LIKE '%NEUTERED%' OR SEX_UPON_INTAKE LIKE '%SPAYED%','O','X') AS '중성화'
+SELECT ANIMAL_ID, NAME, 
+IF(SEX_UPON_INTAKE LIKE '%NEUTERED%' OR SEX_UPON_INTAKE LIKE '%SPAYED%','O','X') AS 중성화
 FROM ANIMAL_INS;
+```
+
+--------------------------------------------------------------------
+#### MySQL CASE Function
+Syntax
+```MYSQL
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+```
+
+#### MySQL IF() Function
+Syntax
+```mysql
+IF(condition, value_if_true, value_if_false)
 ```
