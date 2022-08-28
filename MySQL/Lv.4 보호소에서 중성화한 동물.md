@@ -4,8 +4,9 @@
 
 <details markdown ="1">
 <summary>문제 설명 보기</summary>
-<img src="">
-<img src="">
+<img src="https://user-images.githubusercontent.com/86038910/187062811-18bb41aa-16ab-4f0c-825f-f495dbc88977.png">
+<img src="https://user-images.githubusercontent.com/86038910/187062894-76838cab-550f-4748-88c5-26a88f23e275.png">
+<img src="https://user-images.githubusercontent.com/86038910/187062918-4de5ae70-085a-408c-9924-5383faac7336.png">
 </details>
 
 ### QUERY
@@ -25,7 +26,7 @@ SELECT INS.ANIMAL_ID, INS.ANIMAL_TYPE, INS.NAME
 FROM ANIMAL_INS AS INS
 LEFT JOIN ANIMAL_OUTS AS OUTS
 ON INS.ANIMAL_ID = OUTS.ANIMAL_ID
-WHERE NOT INS.SEX_UPON_INTAKE LIKE OUTS.SEX_UPON_OUTCOME 
+WHERE INS.SEX_UPON_INTAKE NOT LIKE OUTS.SEX_UPON_OUTCOME 
 ORDER BY INS.ANIMAL_ID
 ```
 
