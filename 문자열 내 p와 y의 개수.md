@@ -7,6 +7,7 @@
 </details>
 
 ### 코드
+ex Array 사용
 ```java
 class Solution {
     boolean solution(String s) {
@@ -20,6 +21,20 @@ class Solution {
         }
         if (numberOfP != numberOfY) answer = false;
         return answer;
+    }
+}
+```
+
+ex2 문자열 그대로 풀기
+```java
+class Solution {
+    boolean solution(String s) {
+        int numberOfP = 0, numberOfY = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (String.valueOf(s.charAt(i)).equals("p") || String.valueOf(s.charAt(i)).equals("P")) numberOfP++;
+            if (String.valueOf(s.charAt(i)).equals("y") || String.valueOf(s.charAt(i)).equals("Y")) numberOfY++;
+        }
+        return numberOfP == numberOfY;
     }
 }
 ```
